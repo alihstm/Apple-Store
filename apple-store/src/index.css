@@ -1,0 +1,99 @@
+@import "tailwindcss";
+:root {
+  --white-less: #fafafa;
+  --white2: #ececec;
+  --white3: #f3f4f6;
+  --orange: #ff510c;
+  --orangered: #e24c21;
+  --purple: #a848de;
+  --light-purple: #9a5bff;
+  --gray: #828282;
+  --light-gray: #f5f5f5;
+  --dark-gray: #303030;
+  --light-gold: #ffda79;
+  --blue: #004fc6;
+  --skyBlue: #72aaff;
+  --vazir-font: Vazirmatn;
+  --alexandria-font: Alexandria;
+  --lalezar-font: Lalezar;
+}
+* {
+  user-select: none;
+  scroll-behavior: smooth;
+  direction: rtl;
+  margin: 0rem;
+}
+.custom-main-font {
+  font-family: var(--vazir-font);
+}
+.custom-offer-font {
+  font-family: var(--alexandria-font);
+}
+.custom-logo-font {
+  font-family: var(--lalezar-font);
+}
+.custom-orange-bg {
+  background-color: var(--orange);
+}
+.custom-whiteLess-bg {
+  background-color: var(--white-less);
+}
+.custom-white2-bg {
+  background-color: var(--white2);
+}
+.custom-white3-bg {
+  background-color: var(--white3);
+}
+.custom-lightGray-bg {
+  background-color: var(--light-gray);
+}
+.custom-gray-bg {
+  background-color: var(--gray);
+}
+.custom-darkGray-bg {
+  background-color: var(--dark-gray);
+}
+.custom-orangered-bg {
+  background-color: var(--orangered);
+}
+.custom-orange-color {
+  color: var(--orange);
+}
+.custom-whiteLess-color {
+  color: var(--white-less);
+}
+.custom-darkGray-color {
+  color: var(--dark-gray);
+}
+.custom-appleVisionPro-bg {
+  background: url("../src/assets/Material/AppleVisionPro.svg") no-repeat center;
+  background-size: 60rem;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+}
+.animate-float {
+  animation: float 3s infinite ease-in-out;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.custom-mb {
+  margin-bottom: 1rem;
+}
+@media (width <= 40rem) {
+  .custom-appleVisionPro-bg {
+    background-size: 30rem;
+  }
+}
